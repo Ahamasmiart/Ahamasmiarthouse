@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="AHAM ASMI ARTHOUSE – An independent film production house focusing on sustainable filmmaking to create imapctful feel-good cinemas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AHAM ASMI ARTHOUSE</title>
+  <style>
+  /* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans:wght@300;400&display=swap');
+
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes revealText {
+    from { opacity: 0; letter-spacing: 10px; }
+    to { opacity: 1; letter-spacing: normal; }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+
+  header {
+    background: url('Aham asmi arthouse.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3em;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border: 2px solid #fff;
+    display: inline-block;
+    animation: revealText 1.2s ease-in-out;
+  }
+
+  nav {
+    text-align: center;
+    background: #111;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  nav a:hover {
+    color: #aaa;
+  }
+
+  section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .projects img,
+  .projects img:hover {
+    transition: transform 0.3s ease;
+  }
+
+  .projects img:hover {
+    transform: scale(1.05);
+  }
+
+  .projects img {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+    border: 2px solid #fff;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s;
+    z-index: 999;
+    animation: pulse 2s infinite;
+  }
+
+  #backToTop:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Gradient Text */
+header p {
+  background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: revealText 1.5s ease-in-out;
+}
+
+/* Nav Underline Animation */
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Image Fade-In Zoom */
+img[data-aos] {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+img[data-aos]:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#meet-team">Meet Our Team</a>
+  <a href="#projects">Our Work</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+    <h1 style="font-family: 'Georgia', serif; font-size: 48px; background: rgba(0,0,0,0.4); padding: 20px; border: 2px solid #fff; display: inline-block; animation: revealText 1.2s ease-in-out;">
+      AHAM ASMI ARTHOUSE
+    </h1>
+
+    <div style="margin-top: -25px; background-color: rgba(0,0,0,0.6); padding: 1px 5px; border-radius: 6px;">
+      <p style="
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+      ">
+        Art's in the Hearts
+      </p>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We are an emerging film production house focused on crafting meaningful, feel-good cinema. Inspired by raw emotions and cinematic truth, CineWave Studios believes in telling stories that resonate.</p>
+</section>
+
+<section id="meet-team">
+  <h2>Meet Our Team</h2>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin-top: 30px;">
+    <!-- Founder -->
+    <div style="text-align: center; max-width: 300px;">
+      <img src="data:image/jpeg;base64,...(your image)..." alt="Founder Photo" style="border-radius: 100%; border: 2px solid white; width: 200px; height: 200px;">
+      <h3>Founder Name</h3>
+      <p style="font-size: 0.9em;">Founder & Director<br>Brief bio goes here...</p>
+    </div>
+    <!-- Team Member 1 -->
+    <div style="text-align: center; max-width: 300px;">
+      <img src="https://via.placeholder.com/200x200.png?text=Team+1" alt="Team Member 1" style="border-radius: 100%; border: 2px solid white; width: 200px; height: 200px;">
+      <h3>Team Member 1</h3>
+      <p style="font-size: 0.9em;">Creative Producer<br>Bio goes here...</p>
+    </div>
+    <!-- Team Member 2 -->
+    <div style="text-align: center; max-width: 300px;">
+      <img src="https://via.placeholder.com/200x200.png?text=Team+2" alt="Team Member 2" style="border-radius: 100%; border: 2px solid white; width: 200px; height: 200px;">
+      <h3>Team Member 2</h3>
+      <p style="font-size: 0.9em;">Cinematographer<br>Bio goes here...</p>
+    </div>
+    <!-- Team Member 3 -->
+    <div style="text-align: center; max-width: 300px;">
+      <img src="https://via.placeholder.com/200x200.png?text=Team+3" alt="Team Member 3" style="border-radius: 100%; border: 2px solid white; width: 200px; height: 200px;">
+      <h3>Team Member 3</h3>
+      <p style="font-size: 0.9em;">Editor<br>Bio goes here...</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Our Work</h2>
+  <p>Upcoming Projects:</p>
+  <img src="https://via.placeholder.com/300x400.png?text=Coming+Soon" alt="Coming Soon Poster">
+  <img src="https://via.placeholder.com/300x400.png?text=Future+Release" alt="Future Poster">
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:ventures@ahamasmiarthouse.com">ventures@ahamasmiarthouse.com</a></p>
+  <p>Follow us on Instagram: @ahamasmiarthouse</p>
+</section>
+
+<footer>
+  © 2025 Aham Asmi Arthouse. All rights reserved.
+</footer>
+
+<button onclick="scrollToTop()" id="backToTop">⬆ Jump Up</button>
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
