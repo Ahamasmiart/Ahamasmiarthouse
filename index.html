@@ -36,7 +36,7 @@
   }
 
   header {
-    background: url('images/Ahamasmiarthouse.png') no-repeat center center/cover;
+    background: url('Ahamasmiarthouse.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -171,6 +171,45 @@ img[data-aos] {
 img[data-aos]:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+    padding: 15px;
+  }
+
+  header p {
+    font-size: 1.4em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .projects img {
+    max-width: 90%;
+  }
+
+  #backToTop {
+    font-size: 14px;
+    padding: 8px 16px;
+    bottom: 20px;
+    right: 15px;
+  }
+
+  #meet-team div {
+    max-width: 100% !important;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 </head>
